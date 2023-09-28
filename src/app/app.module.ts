@@ -7,13 +7,17 @@ import { GifsModule } from './gifs/gifs.module';
 
 import { SharedModule } from './shared/shared.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { AppRoutingModule } from './app-routing.module';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
     SharedModule,
     GifsModule,
